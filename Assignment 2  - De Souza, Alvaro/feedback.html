@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/feedback.css">
+
+    <title>JDM Heaven</title>
+</head>
+<body>
+    <header>
+        <h1>JDM Heaven</h1>
+        <img id ="logo" src="images/Logo.png" alt ="logo">
+    </header>
+    <nav role="navigation" aria-label="Main menu">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href ="video.html">Video</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <a href="">More</a>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Option</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <aside id = "thumbnails">
+        <H2>Our Garage</H2>
+        <ul role ="navigation" aria-label="side menu">
+            <a href="Supra.html"aria-label = "Toyota Supra Section" title="Toyota Supra Section">
+            <li>
+                <figure>
+                    <img src = "thumbnails/Supra MK4.png" alt = "Toyota Supra">
+                    <figcaption>Toyota Supra</figcaption>
+                </figure>
+                
+            </li>
+        </a>
+        <a href="RX7.html" title="Mazda RX7 Section">
+            <li>
+                <figure>
+                    <img src = "thumbnails/Mazda RX7.png" alt = " ">
+                    <figcaption>Mazda RX7</figcaption>
+                </figure>
+            </li>
+        </a>
+        <a href="EVOIV.html" title="Mitsubishi EVO IV Section">
+            <li>
+                <figure>
+                    <img src="thumbnails/Mitsubishi EVO IV.png" alt = "">
+                    <figcaption>Mitsubishi EVO IV</figcaption>
+                </figure>
+            </li>
+        </a>
+        <a href="NSX.HTML" title = "NSX Section">
+            <li>
+                <figure>
+                    <img src = "thumbnails/Honda NSX.png" alt ="">
+                    <figcaption>Honda NSX</figcaption>
+                </figure>
+            </li>
+        </a>
+        </ul>   
+    </aside>
+    <main>
+        <H2>Sign our Newsletter</H2>
+        <form action="process-form" method="post" class="form-main">
+            <fieldset>
+                <div>
+            <label for="username">Name* :</label>
+            <input type="text" placeholder="Username">
+        </div>
+        <div>
+            <label for="Email">Email* :</label>
+            <input type="text" placeholder="Email">
+        <br>
+        <label for="JDM-CARS">CAR*:</label>
+                    <select name="JDM-CARS" id="dropdown">
+                        <option value="">-- Select a Car --</option>
+                        <optgroup label="Toyota">
+                            <option value="ToyotaC">Toyota Chaser</option>
+                            <option value="ToyotaS">Toyota Supra</option>
+                        </optgroup>
+                        <optgroup label="Nissan">
+                        <option value="NissanS">Nissan Silvia S13</option>
+                        <option value="Nissan">Nissan GTR R35</option>
+                        <option value="NissanR34">Nissan Skyline R34</option>
+                    </optgroup>
+                    </select>   
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message(optional): </label>
+                    <textarea name="message" id="message"></textarea>
+                </fieldset>
+                <fieldset>
+            <div>
+                <input type="submit" value="Subscribe" class ="submit">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <input type="reset" value="RESET" ID="reset">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    <aside id = "optional">
+        <form>
+        <h1>My website was fun to visit?</h1>
+        <!-- <form id = "form-aside"> -->
+            <input type="checkbox" id="opt1" name="opt1" value="FUN">
+            <label for="opt1"> FUN TO VISIT</label><br>
+            <input type="checkbox" id="opt2" name="opt2" value="DESIGN">
+            <label for="opt2"> WELL DESIGNED</label><br>
+            <input type="checkbox" id="opt3" name="opt3" value="COLORS">
+            <label for="opt3"> USED GOOD COLORS</label><br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </aside>
+    <footer>
+        <p>&copy; JDM Heaven, Conestoga 2023 </p>
+    </footer>
+</body>
+</html>

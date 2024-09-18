@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+}
+/*setting up the body of the webpage*/
+body{
+    background: linear-gradient(150deg , rgb(255, 255, 255),  #4ca5d3);
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    font: normal normal normal 12px/30px Georgia, serif;
+    border: solid 1px black;   
+    padding: 10px; 
+    display: grid;
+    grid-gap: 20px;
+}
+html{
+    background-color: white;
+}
+main, aside, nav, header, footer{
+
+    border: solid 1px black; 
+    padding: 10px;
+    border-radius: 1em;
+}
+header, nav, footer{
+    grid-column-start: 1;
+    grid-column-end: 12; 
+    background-color: #353433; 
+    color: #4273a9;
+
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row-start:1;
+    grid-row-end: 2;
+    display: grid;
+}
+#logo{
+    
+    grid-column-start: 12;
+    width: 100px;
+}
+
+nav{
+    grid-row-start:2;
+    grid-row-end: 4;
+    background-color: #353433; 
+    padding: 20px 0;
+    text-align: center; 
+}
+
+nav a{
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #4273a9; 
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+
+
+nav ul{ 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{ 
+    display: inline-block; 
+    position: relative; 
+}
+
+nav ul li ul { 
+	width: 200px;
+	position: absolute;
+	z-index: 999; 
+	text-align: left;
+	background-color: #4273a9;
+    box-shadow: 0 0 5px #4273a9;
+}
+
+nav ul li ul li a{ 
+    color: white;
+    padding: 10px;
+    display: block; 
+}
+
+nav ul li ul li:hover a:hover{
+    color: #4273a9;
+    background-color: #353433;
+}
+
+nav ul li ul { 
+    display: none; 
+}
+
+nav ul li:hover ul{
+    display: block; 
+}
+
+#thumbnails{
+  
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+#thumbnails h2
+{
+    margin:5px;
+    margin-right: 0px;
+    border: solid 1px black;;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ff0000;
+}
+#thumbnails ul{
+    padding: 0;
+}
+#thumbnails a{
+    font-size: 20px; /* make the text bigger than default */
+    font-weight: bold; /* make the text bold */
+
+    text-decoration: none; /* remove the underline */
+
+}
+#thumbnails a:hover li{
+    color: #353433; 
+    background-color:#4273a9;
+}
+#thumbnails li{
+    list-style: none;
+    border: solid black 1px;
+    margin: 2px;
+    background-color: #353433; /* add colour to the nav background */
+    color: #4273a9; /* change the colour of the text links */
+}
+#thumbnails img{
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+  
+}
+#thumbnails figcaption{
+    padding-left: 10px;
+    padding-top: 0px;
+    display:inline;
+
+}
+main{
+   
+    grid-column-start: 3;
+    grid-column-end: 9;
+}
+#optional{
+  
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+b
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    color: red;
+}
+#optional ul li
+{
+  font-size: 19px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#thumbnails, main, #optional{
+    grid-row-start: 4;
+    grid-row-end: 10;
+    
+}
+footer{
+    grid-row-start: 10;
+    grid-row-end: 12;
+
+}

@@ -1,0 +1,49 @@
+.form-main
+{
+    border: solid 1px black;;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap:10px;
+margin-bottom: 20px;
+font-size: 15px;
+
+}
+label
+{
+display: inline-block;
+}
+fieldset
+{
+border: solid 1px black;
+}
+form textarea
+{
+width: 200px;
+height: 80px;
+}
+#optional label
+{
+
+    font-size: 15px;
+
+}
+.submit
+{
+    font-size: 20px;
+    color: aliceblue;
+    background-color: black;
+width: 90%;
+height: 5%;
+}
+#reset
+{
+    font-size: 20px;
+color: aliceblue;
+background-color: red;
+width: 90%;
+height: 5%;
+}
+/* .form-aside
+{
+
+} */
